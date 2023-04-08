@@ -1,5 +1,8 @@
 import React from "react";
 import Student from "./Student";
+
+import Pt from "prop-types";
+
 // import { Component } from "react";
 
 // let element = React.createElement("h1", null, "Hello Students");
@@ -32,7 +35,7 @@ import Student from "./Student";
 const App = () =>{
     return (
       <>
-        <Student name="Ravi" />
+        <Student  />
         <Student name="Sumit" />
         <Student name="Sonam" />
       </>

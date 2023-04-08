@@ -8,3 +8,4 @@ import App from './App.js';
 
 // 2. For function Based Component includes Props
 ReactDom.render(<App name="Ravi" />, document.getElementById("root"));
+
