@@ -1,5 +1,8 @@
 import React from "react";
-import Student from "./Student";
+import Student from "./prop_Types";
+import ChildProps from "./ChildProps";
+import State from './state'
+import EventHandler from "./EventHandling";
 
 import Pt from "prop-types";
 
@@ -7,6 +10,9 @@ import Pt from "prop-types";
 
 // let element = React.createElement("h1", null, "Hello Students");
 
+
+// ------------------------------------------------------------------
+// Components
 // 1. Class Based Component
 
 // class App extends Component {
@@ -32,14 +38,38 @@ import Pt from "prop-types";
 
 // ------------------------------------------------------------
 // Composing Components...
-const App = () =>{
-    return (
-      <>
-        <Student  />
-        <Student name="Sumit" />
-        <Student name="Sonam" />
-      </>
-    );
-}
+// const App = () =>{
+//     return (
+//       <>
+//         <Student  />
+//         <Student name="Sumit" />
+//         <Student name="Sonam" />
+//       </>
+//     );
+// }
 
+// -----------------------------------------------------------------------
+// Child Props Code
+// const App = () =>{
+//   return <ChildProps>This text is Children Props Text...</ChildProps>
+// }
+
+
+// ---------------------------------------------------------------------
+// State Code
+// const App = () =>{
+//   return <State age={23}/>
+// }
+
+// -------------------------------------------------------------
+//event Handler Code
+// const App = () => {
+//   return <EventHandler name="Hii"/>
+// }
+
+
+// Change State Code
+const App = () => {
+  return <State name="Ravi" age={22}/>
+}
 export default App;
