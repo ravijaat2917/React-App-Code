@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import Student from "./prop_Types";
 import ChildProps from "./ChildProps";
 import State from "./state";
 import EventHandler from "./EventHandling";
 import Mounting from "./01_Mounting_Components/Mounting";
 import Update from "./02_Updating_Components/Updating";
+import UnMounted from "./03_UnMounting_Component/Student";
 
 import Pt from "prop-types";
 
@@ -69,13 +70,19 @@ import Pt from "prop-types";
 //   return <State name="Ravi" age={22}/>
 // }
 
+// --------------------------------------------------------------
 // Mounting Component
 // const App = () => {
 //   return <Mounting name="ravi"/>;
 // };
 
 // Updating Component
+// const App = () => {
+//   return <Update />;
+// };
+
+// UnMounting Component
 const App = () => {
-  return <Update />;
+  return <UnMounted />;
 };
 export default App;
