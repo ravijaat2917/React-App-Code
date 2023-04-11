@@ -1,15 +1,16 @@
 import React from "react";
 import Student from "./prop_Types";
 import ChildProps from "./ChildProps";
-import State from './state'
+import State from "./state";
 import EventHandler from "./EventHandling";
+import Mounting from "./01_Mounting_Components/Mounting";
+import Update from "./02_Updating_Components/Updating";
 
 import Pt from "prop-types";
 
 // import { Component } from "react";
 
 // let element = React.createElement("h1", null, "Hello Students");
-
 
 // ------------------------------------------------------------------
 // Components
@@ -27,14 +28,11 @@ import Pt from "prop-types";
 //   }
 // }
 
-
 // 2. Function Based Component
 
 // const App = (props) =>{
 //     return <h1>Hello {props.name} .</h1>
 // }
-
-
 
 // ------------------------------------------------------------
 // Composing Components...
@@ -54,7 +52,6 @@ import Pt from "prop-types";
 //   return <ChildProps>This text is Children Props Text...</ChildProps>
 // }
 
-
 // ---------------------------------------------------------------------
 // State Code
 // const App = () =>{
@@ -67,9 +64,18 @@ import Pt from "prop-types";
 //   return <EventHandler name="Hii"/>
 // }
 
-
 // Change State Code
+// const App = () => {
+//   return <State name="Ravi" age={22}/>
+// }
+
+// Mounting Component
+// const App = () => {
+//   return <Mounting name="ravi"/>;
+// };
+
+// Updating Component
 const App = () => {
-  return <State name="Ravi" age={22}/>
-}
+  return <Update />;
+};
 export default App;
