@@ -1,13 +1,18 @@
+// Inbuilt Imports
 import React, { Component } from "react";
-import Student from "./prop_Types";
-import ChildProps from "./ChildProps";
-import State from "./state";
-import EventHandler from "./EventHandling";
+import Pt from "prop-types";
+
+
+import Student from "./002prop_Types";
+import ChildProps from "./001ChildProps";
+import State from "./004state";
+import EventHandler from "./003EventHandling";
 import Mounting from "./01_Mounting_Components/Mounting";
 import Update from "./02_Updating_Components/Updating";
 import UnMounted from "./03_UnMounting_Component/Student";
-
-import Pt from "prop-types";
+import Hooks from "./Hooks/useState";
+import Effect from "./Hooks/useEffect"
+import useCustomCounter from "./Hooks/customHook";
 
 // import { Component } from "react";
 
@@ -82,7 +87,52 @@ import Pt from "prop-types";
 // };
 
 // UnMounting Component
+// const App = () => {
+//   return <UnMounted />;
+// };
+
+
+// Hooks Code Stuff ----------------------------------------------
+// useState Code
+// const App = () => {
+//   return (
+//     <>
+//       <Hooks/>
+//     </>
+//   )
+// }
+
+// 2. useEffect Code
+// const App = () => {
+//   return (
+//     <>
+//       <h1>UseEffect Code Page...</h1>
+//       <Effect />
+//     </>
+//   );
+// };
+
+// 3. useCustom Effect
 const App = () => {
-  return <UnMounted />;
+  let data = useCustomCounter();
+  let data1 = useCustomCounter();
+  return (
+    <>
+      <h1>UseEffect Code Page...</h1>
+      <h2>Count : {data1.count}</h2>
+      <button type="button" onClick={data1.handleIncrement}>
+        Increment
+      </button>
+
+      {/* Reuse */}
+      <h2>Count : {data.count}</h2>
+      <button type="button" onClick={data.handleIncrement}>
+        Increment
+      </button>
+
+    </>
+  );
 };
+
+
 export default App;

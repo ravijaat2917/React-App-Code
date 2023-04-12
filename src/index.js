@@ -7,7 +7,8 @@ import UnMounted from "./03_UnMounting_Component/Student";
 // ReactDom.render(<App/> , document.getElementById("root"));
 
 // 2. For function Based Component includes Props
-// ReactDOM.render(<App name="Ravi" />, document.getElementById("root"));
+ReactDOM.render(<App name="Ravi" />, document.getElementById("root"));
 
-ReactDOM.render(<UnMounted />, document.getElementById("unMount"));
-ReactDOM.unmountComponentAtNode(document.getElementById("unMount"));
+// 3. for mount and Unmount Code rendering...
+// ReactDOM.render(<UnMounted />, document.getElementById("unMount"));
+// ReactDOM.unmountComponentAtNode(document.getElementById("unMount"));
