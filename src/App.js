@@ -10,9 +10,9 @@ import EventHandler from "./003EventHandling";
 import Mounting from "./01_Mounting_Components/Mounting";
 import Update from "./02_Updating_Components/Updating";
 import UnMounted from "./03_UnMounting_Component/Student";
-import Hooks from "./Hooks/useState";
-import Effect from "./Hooks/useEffect"
-import useCustomCounter from "./Hooks/customHook";
+import Hooks from "./04_Hooks/useState";
+import Effect from "./04_Hooks/useEffect"
+import useCustomCounter from "./04_Hooks/customHook";
 
 // import { Component } from "react";
 
