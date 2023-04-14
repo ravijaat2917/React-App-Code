@@ -4,7 +4,7 @@ export default class App extends Component {
 
   state = {
     users: [
-      { id: 101, name: "ravi", password: "3423ssdf" },
+      { id: 101, name: "Ravi", password: "3423ssdf" },
       { id: 102, name: "Sonam", password: "y3t7rd37ey8" },
       { id: 103, name: "Sumit", password: "uy3e73hed" },
     ],
@@ -42,8 +42,10 @@ export default class App extends Component {
         
         // 4. from object array
         <>
-            {/* <h1>{this.state.users.map((value)=>value.name)}</h1> */}
-            {newUser.map((value) => <h1>{value.name} , { value.password}</h1>)}
+        {/* <h1>{this.state.users.map((value)=>value.name)}</h1> */}
+        
+        {/* Also Add Key unique value for not getting error in console */}
+            {newUser.map((value) => <h1 key={value.id}>{value.name} , { value.password}</h1>)}
         </>
     );
   }
