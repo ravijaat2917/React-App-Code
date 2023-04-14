@@ -5,6 +5,7 @@ import ConditionalRendering from './05_ConditionalRendring/App.js';
 import UnMounted from "./03_UnMounting_Component/Student";
 import List from "./06_Lists/App.js";
 import Keys from './07_KeysInComponent/App.js';
+import StyleCode from './08_StylingComponent_ReactWithCSS/App.js';
 
 // 1.For Class Based Component
 // ReactDom.render(<App/> , document.getElementById("root"));
@@ -30,5 +31,8 @@ import Keys from './07_KeysInComponent/App.js';
 // ReactDOM.render(<List />, document.getElementById("root"));
 
 // 6. Keys plantation Code
-const arr = [10, 20, 30, 40];
-ReactDOM.render(<Keys numbers={arr} />, document.getElementById("root"));
+// const arr = [10, 20, 30, 40];
+// ReactDOM.render(<Keys numbers={arr} />, document.getElementById("root"));
+
+// 7. Styling Code
+ReactDOM.render(<StyleCode />, document.getElementById('root'));
