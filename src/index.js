@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App.js";
 import ConditionalRendering from './05_ConditionalRendring/App.js';
 import UnMounted from "./03_UnMounting_Component/Student";
+import List from "./06_Lists/App.js";
 
 // 1.For Class Based Component
 // ReactDom.render(<App/> , document.getElementById("root"));
@@ -19,7 +20,9 @@ import UnMounted from "./03_UnMounting_Component/Student";
 
 
 // 4. Conditional Rendering Code...
-ReactDOM.render(
-  <ConditionalRendering consumer={true} primeMember={true} />,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <ConditionalRendering consumer={true} primeMember={true} />,
+//   document.getElementById("root")
+// );
+
+ReactDOM.render(<List />, document.getElementById("root"));
